@@ -15,7 +15,7 @@ const Chat = () => {
             <h3>Room Name</h3>
             <p>Last Message...</p>
           </div>
-          <div className='chat__herderRight'>
+          <div className='chat__headerRight'>
             <IconButton>
               <SearchIcon />
             </IconButton>
@@ -27,7 +27,16 @@ const Chat = () => {
             </IconButton>
           </div>
       </div>
-
+      <div className='chat__body'>
+        <p>
+          <span className='chat__name'>Pooja</span>
+          message
+          <span className='chat__timestamp'>{new Date().toUTCString()}</span>
+        </p>
+      </div>
+      <div className='chat__footer'>
+        <p></p>
+      </div>
     </div>
   )
 }
